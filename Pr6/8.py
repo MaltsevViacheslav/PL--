@@ -10,9 +10,8 @@ print("Произведение элементов  = ", a2)
 
 #2
 b = [0, 2, -8, 3.44, 10, 108, 0]
-b1 = sum(b)
-b2 = sum(b) / len(b)
+b1 = sum(b) / len(b)
 for i in range(len(b)):
-    if b [i] == 0:
-       b [i] = b2
+    if b[i] == 0:
+       b[i] = b1
 print(b)
