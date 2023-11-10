@@ -1,6 +1,9 @@
 #1
 a = [1, 2, 3, 4, 4, 5, 5, 6, 7]
-b = [i for i in set(a) if a.count(i) > 1]
+b = []
+for i in a:
+    if a.count(i) > 1:
+     b.append(i)
 if len(b) == 0:
     print("Повторяющихся элементов нет")
 else:
