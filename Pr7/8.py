@@ -16,7 +16,7 @@ def func2(A):
     A[0], A[-1] = A[-1], A[0]
     return A
 
-x = int(input("m = "))
-A = list(map(int, input("Введите элементы массива: ").split(maxsplit = x)))
-print(A)
-print(func2(A))
+m = int(input("Длина массива равна: "))
+A = list(map(int, input("Введите элементы массива: ").split(maxsplit = (m - 1))))
+print("Исходный массив", A)
+print("Изменённый массив", func2(A))
