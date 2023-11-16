@@ -28,16 +28,15 @@ for i in range(size):
     print()
 
 #2
-m = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-for i in m:
-    print(i)
-print()
+m = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
 n = 3
-tm = [] 
+tm = []
 for i in range(n):
-    tm.append([0] * n) 
+    tm.append([0] * n)
 for i in range(n):
     for j in range(n):
-        tm[j][i] = m[i][j] 
+        tm[j][i] = m[i][j]
 for i in range(len(tm)):
     print(tm[i])
