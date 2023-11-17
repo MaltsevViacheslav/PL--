@@ -4,17 +4,16 @@ n = 3
 s = 0
 for j in range(n):
     s += A[0][j]
-    b = "да, является"
 for i in range(n):
     s1 = 0
     s2 = 0
     for j in range(n):
         s1 += A[i][j]
         s2 += A[i][j]
-    if s1 != s or s2 != s:
-        b = "нет, не является"
-print(b)
-
+if s1 != s or s2 != s:
+    print("Нет, не является")
+else:
+    print("Да, является")
 #2
 n = 3
 m = 4
